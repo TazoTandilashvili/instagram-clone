@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /* border: 1px solid red;*/
+}
+body{
+    background-color: #fafafa;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 105px;
+}
+.left{
+    position: relative;
+}
+ 
+.screen{
+    position: absolute;
+    left: 150px;
+    top: 100px;
+}
+.panel {
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    padding: 20px 40px;
+    margin: 5px 0px;
+    display: flex;
+}
+.login{
+    flex-direction: column;
+    align-items: center;
+}
+#logo{
+    width: 65%; 
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Login buttons */
+
+.input-box{
+    width: 100%;
+    padding: 10px;
+    margin: 2px;
+    border: 1px solid #dedede;
+    border-radius: 2px ;
+    
+}
+.input-box::placeholder{
+    color: #8a8a8a;
+    font-size: 12px;
+}
+.input-box:focus{
+    outline: none;
+    border: 1px solid #8a8a8a;
+}
+.button{
+    margin-top: 8px;
+    width: 100%;
+    padding: 10px;
+    background-color: #0095f6;
+    border: 1px solid #dedede;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.divider{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+    color: #8a8a8a;
+    gap: 20px;
+    align-items: center;
+}
+.line{
+    flex: 1;
+    height: 1px;
+    background-color: #8a8a8a;
+}
+.fb{
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #3b5998 ;
+    font-weight: 600;
+}
+.fb::before{
+    font-family: Font Awesome 5 Brands;
+    content: "\f082";
+    margin-right: 5px;
+    font-size: 14px;
+}
+.forgot{
+    margin-top: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #00376b;
+}
+.signup{
+    justify-content: center;
+    margin-top: 12px;
+    font-size: 15px;
+}
+.signup a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: #0095f6;
+    font-weight: 600;
+}
+.apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    margin: 20px 0px;
+}
+.app-stores{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.app-stores img{
+    width: 140px;
+    height: auto;
+    margin-left: 9px;
+}
+
+@media (max-width: 860px) {
+    .left{
+        display: none;
+    }
+}
